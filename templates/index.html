@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<title>BSTAR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("static/bstarfront.png");
+    min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#googleMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open Sun-Mon: 1pm to 2am</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br>Britestar Tavern</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>Britestar Tavern</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">What we offer</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE BEVERAGES</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Beer</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Wine</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Speciality Drinks</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Domestic Bottles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.00</span></h1>
+      <p class="w3-text-grey">Coors light, Budlight, Budweiser</p>
+      <hr>
+
+      <h1><b>Imported Bottles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.75</span></h1>
+      <p class="w3-text-grey">Stella, Modelo, XX, corona, Pacifico</p>
+      <hr>
+
+      <h1><b>Pints(16oz)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4-$6.75</span></h1>
+      <p class="w3-text-grey">XX Amber, Space Dust, lagunitas etc...</p>
+      <hr>
+
+      <h1><b>Mugs(25oz)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6-$9.75</span></h1>
+      <p class="w3-text-grey">XX Amber, Space Dust, lagunitas etc.....</p>
+      <hr>
+
+      <h1><b>Pitchers(60oz)</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$13-$22.00</span></h1>
+      <p class="w3-text-grey"> </p>
+      <hr>
+
+      <h1><b></b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey"></p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>By the glass</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Red, White, etc....</p>
+      <hr>
+
+      <h1><b>By the bottle</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Red, White, etc...</p>
+      <hr>
+
+      <h1><b>BYOB Corkage fee</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.00</span></h1>
+      <p class="w3-text-grey">Bring your own bottle to enjoy.</p>
+      <hr>
+
+      <h1><b>Sangria glass</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Sangria pitcher</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey"></p>
+    </div>
+
+
+
+
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Fullsack</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$9.00</span></h1>
+      <p class="w3-text-grey">Ask the Bartender</p>
+      <hr>
+
+      <h1><b>Margarita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Good stuff!</p>
+      <hr>
+
+      <h1><b>Michelada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.75</span></h1>
+      <p class="w3-text-grey">The best in town!</p>
+      <hr>
+
+      <h1><b>Shooting Star(Shooter)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Shot(Rice wine)</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.00</span></h1>
+      <p class="w3-text-grey"></p>
+    </div>
+
+
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p> The Britestar Tavern was established in 1965, and it's been energetic and rockin' ever since.</p>
+    <p><strong>LIVE SINCE '65</strong><img src="static/zz.png" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our history. located on historic route66</p>
+    <img src="static/tt.png" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Monday 1pm-2am Paint Night</p>
+        <p>Tuesday 1pm-2am Taco Tuesday</p>
+        <p>Wednesday 1pm-2am Pint Night</p>
+        <p>Thursday 1pm-2am Karaoke Night</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 1pm-2am Open-mic Night </p>
+        <p>Saturday 1pm-2am </p>
+        <p>Sunday 1pm-2am</p>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Contact (with google maps) -->
+<div id="googleMap" class="w3-grayscale-max" style="width:100%;height:20px;"></div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p><strong>Find us at 731 W. Rte 66, Glendora, Ca. or call us at (626)335-1101</strong></p>
+    <p><span class="w3-tag">FYI!</span> look us up on the gram...</p>
+    <p class="w3-xxlarge"><a href="https://www.instagram.com/britestartavern/?hl=en" class="w3-hover-text-red"><strong>@britestartavern</strong>  </p>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p> <a href="https://www.instagram.com/britestartavern/?hl=en" title="W3.CSS" target="_blank" class="w3-hover-text-red">©Britestar Tavern</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+
+
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+<script src="https://maps.googleapis.com/maps/"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
